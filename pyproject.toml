@@ -1,0 +1,22 @@
+[project]
+name = "hands"
+version = "0.1.0"
+description = "H.A.N.D.S. (Hand-Activated Navigation & Display System) — local-first webcam gesture control for Windows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "mediapipe>=0.10",
+    "opencv-python>=4.9",
+    "numpy>=1.26",
+    "pyautogui>=0.9.54",
+    "pycaw>=20230407; sys_platform == 'win32'",
+    "comtypes>=1.2; sys_platform == 'win32'",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
