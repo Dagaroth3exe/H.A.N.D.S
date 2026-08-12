@@ -22,3 +22,7 @@ htmlcov/
 .DS_Store
 Thumbs.db
 hands-env/
+wilor-env/
+third_party/
+test/gesture_calibration.json
+test/gaze_calibration.json
